@@ -1,13 +1,13 @@
 //set myName variable to your name;
-function myName(name) {
-  let myName = name;
+function myName(Sandra) {
+  let myName = Sandra;
 
-  return myName;
+  return Sandra;
 }
 
 function setTeachersNames(teachersName) {
   // change code below this line so that we can set the variable.
-  const teachers = null;
+  let teachers = null;
   teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
 
   return teachers;
@@ -15,19 +15,19 @@ function setTeachersNames(teachersName) {
 
 /*** return the sum of both arguments  ***/
 function add(a, b) {
-  let sum;
+  let sum = a + b;
 
   return sum;
 }
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
-  return age;
+  return ++age;
 }
 
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
-  return age;
+  return --age
 }
 
 /** Take the argument that will be a string and return an integer  */
