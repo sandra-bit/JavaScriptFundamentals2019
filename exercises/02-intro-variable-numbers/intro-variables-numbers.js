@@ -1,16 +1,16 @@
 //set myName variable to your name;
-function myName(Sandra) {
-  let myName = Sandra;
+function myName(name) {
+  let myName = name;
 
-  return Sandra;
+  return myName;
 }
 
 function setTeachersNames(teachersName) {
   // change code below this line so that we can set the variable.
   let teachers = null;
-  teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
+  teachers =teachersName;  //  <- this is  invalid because teachers is a const. How can we fix this?
 
-  return teachers;
+  return teachers
 }
 
 /*** return the sum of both arguments  ***/
@@ -22,17 +22,19 @@ function add(a, b) {
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
-  return ++age;
+  let year = ++age;
+  return age;
 }
 
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
-  return --age
+  return --age;
 }
 
 /** Take the argument that will be a string and return an integer  */
 function convertStringToInt(str) {
-  let int;
+ 
+  let int =  parseInt(str)
   return int;
 }
 
@@ -46,7 +48,8 @@ function convertStringToInt(str) {
  *
  */
 function getTheCharacterPosition(name, letter) {
-  let characterPosition;
+
+  let characterPosition = name.indexOf(letter); 
   return characterPosition;
 }
 
@@ -55,7 +58,7 @@ function getTheCharacterPosition(name, letter) {
 function stringLength(str) {
   let strLength;
 
-  return strLength;
+  return str.legnth;
 }
 
 /***  return the last character of the argument
@@ -65,11 +68,11 @@ function stringLength(str) {
  *
  */
 
-function getLastCharacter(str) {
-  let lastCharacter;
+function getLastCharacter(str) { 
+  let lastCharacter =str;
+ 
+  return lastCharacter[lastCharacter.legnth - 1];
 
-  return lastCharacter;
-}
 
 /** Return the last part of a place name
  *
@@ -84,7 +87,7 @@ function getLastCharacter(str) {
  */
 
 function getLastWordInPlaceName(place) {
-  let newPlace;
+  let newPlace ;
 
   return newPlace;
 }
